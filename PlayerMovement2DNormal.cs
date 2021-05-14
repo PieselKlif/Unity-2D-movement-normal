@@ -24,7 +24,7 @@ public class PlayerMovement2DNormal : MonoBehaviour
         transform.position += new Vector3(movement, 0, 0) * Time.deltaTime * MovementSpeed;
 
         //Jumping
-        if(JumpingON)
+        if(JumpingON == true)
         {
             if (Input.GetKeyDown(jumpButton) && Mathf.Abs(rb.velocity.y) < 0.001f)
             {
